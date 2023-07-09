@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1200.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.apfi.HelloController">
+    <children>
+        <Label layoutX="1011.0" layoutY="82.0" text="Label" />
+        <Label fx:id="turn" layoutX="1011.0" layoutY="196.0" text="turn">
+            <font>
+                <Font size="39.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="45.0" layoutY="27.0" prefHeight="89.0" prefWidth="360.0" text="welcome to snake and ladder game">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="score1" layoutX="162.0" layoutY="177.0" text="player1 score">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <Button fx:id="diceroll" layoutX="973.0" layoutY="600.0" mnemonicParsing="false" onAction="#roll" prefHeight="38.0" prefWidth="76.0" text="Diceroll" />
+        <Label fx:id="score2" layoutX="171.0" layoutY="384.0" text="player2 score">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="dieimage" fitHeight="150.0" fitWidth="200.0" layoutX="936.0" layoutY="646.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@e.jpeg" />
+            </image>
+        </ImageView>
+        <Circle fx:id="c1" fill="#ff461f" layoutX="182.0" layoutY="557.0" radius="36.0" stroke="BLACK" strokeType="INSIDE" />
+        <Circle fx:id="c2" fill="#e3ff1f" layoutX="182.0" layoutY="655.0" radius="36.0" stroke="BLACK" strokeType="INSIDE" />
+        <Label layoutX="261.0" layoutY="549.0" text="player1" />
+        <Label layoutX="261.0" layoutY="646.0" text="player2" />
+        <Label fx:id="pehla" layoutX="211.0" layoutY="222.0" text="0">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+        <Label fx:id="dosra" layoutX="217.0" layoutY="438.0" text="0">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </Label>
+        <Label layoutX="1049.0" layoutY="470.0" text="result">
+            <font>
+                <Font size="33.0" />
+            </font></Label>
+        <ImageView fitHeight="103.0" fitWidth="125.0" layoutX="136.0" layoutY="731.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fitHeight="96.0" fitWidth="99.0" layoutX="14.0" layoutY="463.0" pickOnBounds="true" preserveRatio="true" />
+        <Label fx:id="re" layoutX="1075.0" layoutY="519.0" text="Label">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="49.0" fitWidth="56.0" layoutX="507.0" layoutY="770.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="357.0" layoutY="721.0" pickOnBounds="true" preserveRatio="true" />
+        <Label layoutX="535.0" layoutY="811.0" text="Label" />
+        <Button fx:id="start" layoutX="594.0" layoutY="734.0" mnemonicParsing="false" onAction="#startgame" prefHeight="45.0" prefWidth="92.0" text="start" />
+        <Label fx:id="top" layoutX="485.0" layoutY="14.0" text="gameplayingnow">
+            <font>
+                <Font size="41.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="602.0" fitWidth="449.0" layoutX="436.0" layoutY="83.0" pickOnBounds="true">
+            <image>
+                <Image url="@q.jpeg" />
+            </image>
+        </ImageView>
+        <GridPane layoutX="463.0" layoutY="94.0" prefHeight="560.0" prefWidth="395.0" rotate="180.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <rotationAxis>
+                <Point3D x="1.0" />
+            </rotationAxis>
+            <children>
+                <Pane fx:id="cp1" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                    <Circle fx:id="player2" fill="#ebff1f" layoutX="22.0" layoutY="43.0" nodeOrientation="LEFT_TO_RIGHT" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+                    <Circle fx:id="player1" fill="#ff461f" layoutX="24.0" layoutY="17.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+               </children></Pane>
+                <Pane fx:id="cp2" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
+                <Pane fx:id="cp3" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" />
+                <Pane fx:id="cp5" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" />
+                <Pane fx:id="cp4" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" />
+                <Pane fx:id="cp6" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" />
+                <Pane fx:id="cp7" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" />
+                <Pane fx:id="cp8" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" />
+                <Pane fx:id="cp9" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" />
+                <Pane fx:id="cp10" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" />
+                <Pane fx:id="cp11" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+                <Pane fx:id="cp12" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                <Pane fx:id="cp13" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                <Pane fx:id="cp14" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                <Pane fx:id="cp15" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                <Pane fx:id="cp16" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                <Pane fx:id="cp17" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <Pane fx:id="cp18" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Pane fx:id="cp19" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Pane fx:id="cp20" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                <Pane fx:id="cp21" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+                <Pane fx:id="cp22" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Pane fx:id="cp23" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Pane fx:id="cp24" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <Pane fx:id="cp25" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                <Pane fx:id="cp26" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                <Pane fx:id="cp27" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                <Pane fx:id="cp28" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                <Pane fx:id="cp29" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                <Pane fx:id="cp30" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+                <Pane fx:id="cp31" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+                <Pane fx:id="cp32" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                <Pane fx:id="cp33" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                <Pane fx:id="cp34" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                <Pane fx:id="cp35" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                <Pane fx:id="cp36" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                <Pane fx:id="cp37" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                <Pane fx:id="cp38" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <Pane fx:id="cp39" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Pane fx:id="cp40" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+                <Pane fx:id="cp41" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
+                <Pane fx:id="cp42" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Pane fx:id="cp43" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                <Pane fx:id="cp44" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                <Pane fx:id="cp45" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                <Pane fx:id="cp46" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                <Pane fx:id="cp47" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                <Pane fx:id="cp48" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                <Pane fx:id="cp49" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+                <Pane fx:id="cp50" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+                <Pane fx:id="cp51" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+                <Pane fx:id="cp52" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+                <Pane fx:id="cp53" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                <Pane fx:id="cp54" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                <Pane fx:id="cp55" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                <Pane fx:id="cp56" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                <Pane fx:id="cp57" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                <Pane fx:id="cp58" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                <Pane fx:id="cp59" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <Pane fx:id="cp60" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="5" />
+                <Pane fx:id="cp61" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="6" />
+                <Pane fx:id="cp62" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <Pane fx:id="cp63" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                <Pane fx:id="cp64" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                <Pane fx:id="cp65" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                <Pane fx:id="cp66" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                <Pane fx:id="cp67" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                <Pane fx:id="cp68" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+                <Pane fx:id="cp69" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+                <Pane fx:id="cp70" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+                <Pane fx:id="cp71" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+                <Pane fx:id="cp72" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+                <Pane fx:id="cp73" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+                <Pane fx:id="cp74" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+                <Pane fx:id="cp75" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                <Pane fx:id="cp76" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                <Pane fx:id="cp77" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                <Pane fx:id="cp78" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                <Pane fx:id="cp79" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <Pane fx:id="cp80" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="7" />
+                <Pane fx:id="cp81" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="8" />
+                <Pane fx:id="cp82" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                <Pane fx:id="cp83" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                <Pane fx:id="cp84" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                <Pane fx:id="cp85" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                <Pane fx:id="cp86" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                <Pane fx:id="cp87" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+                <Pane fx:id="cp88" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+                <Pane fx:id="cp89" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+                <Pane fx:id="cp90" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+                <Pane fx:id="cp91" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+                <Pane fx:id="cp92" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+                <Pane fx:id="cp93" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+                <Pane fx:id="cp94" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+                <Pane fx:id="cp95" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+                <Pane fx:id="cp96" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+                <Pane fx:id="cp97" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                <Pane fx:id="cp98" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                <Pane fx:id="cp99" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                <Pane fx:id="cp100" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="9" />
+            </children>
+        </GridPane>
+      <Button fx:id="move" layoutX="755.0" layoutY="738.0" mnemonicParsing="false" onAction="#moving" prefHeight="38.0" prefWidth="81.0" text="move" />
+    </children>
+</Pane>
